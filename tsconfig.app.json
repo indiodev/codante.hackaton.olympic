@@ -1,5 +1,20 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+		"paths": {
+			"@components/*": ["./src/components/*"],
+			"@libs/*": ["./src/libs/*"],
+			"@routes/*": ["./src/routes/*"],
+			"@layouts/*": ["./src/layouts/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@models/*": ["./src/models/*"],
+			"@mutation/*": ["./src/mutation/*"],
+			"@services/*": ["./src/services/*"],
+			"@store/*": ["./src/store/*"],
+			"@query/*": ["./src/query/*"],
+			"@debounces/*": ["./src/debounces/*"]
+		},
+    
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2020",

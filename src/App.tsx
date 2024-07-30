@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 
+import { Button } from "@components/ui/button";
+
 export function App(): React.ReactElement {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+    <section className="flex-1">
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <Button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+        </Button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
@@ -17,6 +19,6 @@ export function App(): React.ReactElement {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </section>
   );
 }
